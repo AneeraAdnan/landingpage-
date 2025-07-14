@@ -1,7 +1,8 @@
 import pay from "../assets/pay.svg";
-
+import {TEXT} from "../constants/Text";  
 
 const Billing = () => {
+  const {heading,description} = TEXT.billing;
 return(
     <section className="bg-[#00040f] text-white py-16 px-6">
 
@@ -15,13 +16,10 @@ return(
 
             <div className="flex-1 text-center md:text-left">
               <h1 className="text-4xl md:text-5xl font-bold leading-tight">
-              Easily control your 
-              <br></br>
-              billing & invoicing.
+                {heading}
               </h1>
               <p className="mt-6 text-gray-300 text-sm leading-relaxed max-w-md">
-               Elit enim sed massa etiam. Mauris eu adipiscing ultrices ametodio aenean neque. 
-               Fusce ipsum orci rhoncus aliporttitor integer platea placerat.
+                {description}
               </p>
               
             </div>
