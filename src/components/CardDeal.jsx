@@ -1,8 +1,10 @@
 import three from "../assets/three.svg";
 import googleplay from "../assets/googleplay.svg";  
 import appstore from "../assets/appstore.svg";
+import { TEXT } from "../constants/Text";  
 
 const CardDeal = () => {
+  const {description,heading} = TEXT.carddeal;
   return (
     <section className="bg-[#00040f] text-white py-16 px-6">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
@@ -10,12 +12,10 @@ const CardDeal = () => {
       
         <div className="flex-1 text-center md:text-left">
           <h1 className="text-4xl md:text-5xl font-bold leading-tight">
-            Find a better card deal <br />
-            in few easy steps.
+            {heading}
           </h1>
           <p className="mt-6 text-gray-300 text-sm leading-relaxed max-w-md">
-            Arcu tortor, purus in mattis at sed integer faucibus. 
-            Aliquet quis aliquet eget mauris tortor. Aliquet ultrices ac, ametau.
+            {description}
           </p>
 
           
@@ -25,7 +25,6 @@ const CardDeal = () => {
           </div>
         </div>
 
-        {/* Image Right */}
         <div className="flex-1">
           <img src={three} alt="Card Deal Graphic" className="w-full max-w-md mx-auto" />
         </div>
